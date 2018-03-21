@@ -85,7 +85,6 @@ int main  () {
         cin >> k;
         arrays[i] = new BASE_TYPE[k];
         input_to_array( arrays[i] , k , cin );
-        print( arrays[i], k );
         
     }
 
@@ -93,7 +92,7 @@ int main  () {
 
         queries[i] = new BASE_TYPE[MIN];
         input_to_array( queries[i] , MIN , cin );
-        print( queries[i], MIN);
+        
     }
     
     resolve_query ( queries, num_queries, arrays );
